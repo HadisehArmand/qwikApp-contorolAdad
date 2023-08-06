@@ -1,0 +1,135 @@
+.main-sign-log {
+  width: 48rem;
+  height: 40rem;
+  border: 1px solid rgba(0, 0, 0, 0);
+  /* border: 0.2px solid rgba(0, 0, 0, 0); */
+  /* background-color: rgba(0, 0, 0, 0.3); */
+  background-color: rgba(180, 180, 180, 38%);
+  text-align: center;
+  border-radius: 25px;
+}
+.main-login {
+  width: 48rem;
+  height: 35rem;
+  border: 1px solid rgba(0, 0, 0, 0);
+  /* border: 0.2px solid rgba(0, 0, 0, 0); */
+  /* background-color: rgba(0, 0, 0, 0.3); */
+  background-color: rgba(180, 180, 180, 38%);
+  text-align: center;
+  border-radius: 25px;
+}
+.form-control {
+  height: 3rem;
+  width: 10rem;
+}
+.text-center {
+  color: #000000;
+  margin-top: 2rem;
+}
+body {
+  /* background: url(https://e1.pxfuel.com/desktop-wallpaper/209/1020/desktop-wallpaper-best-5-data-science-backgrounds-on-hip-data-science.jpg); */
+  background-color: #eaecd5;
+}
+.input-group-text {
+  height: 3rem;
+  width: 2rem;
+}
+.input-group {
+  width: 30rem;
+}
+.btn {
+  display: grid;
+  justify-content: center;
+  background-color: rgb(59, 51, 82);
+  width: 25rem;
+  height: 3rem;
+  color: #ffff;
+}
+.btnDel {
+  margin: 0 0.7rem;
+  display: grid;
+  justify-content: center;
+  background-color: rgb(59, 51, 82);
+  color: #ffff;
+}
+.main > .btn.btn-primary:hover {
+  background-color: red;
+  color: white;
+}
+.btn:hover {
+  color: #ffff;
+  background-color: rgb(59, 51, 82);
+}
+caption {
+  color: rgb(0, 0, 0);
+  font-weight: 800;
+  font-size: 2rem;
+}
+.img-link2 {
+  width: 1.5rem;
+  height: 1.5rem;
+  margin-right: 1rem;
+}
+.table {
+  overflow: auto;
+}
+.img-link-log {
+  width: 1rem;
+  height: 1rem;
+  color: black;
+  background-color: white;
+}
+.img-link-view-add {
+  width: 1rem;
+  height: 1rem;
+}
+.container {
+  border: 1px solid rgba(0, 0, 0, 0);
+  width: 49rem;
+  height: 40rem;
+  background-color: rgba(180, 180, 180, 38%);
+  margin-top: 4rem;
+  border-radius: 25px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.body-index {
+  background-color: #eaecd5;
+}
+.header {
+  text-align: center;
+  margin-top: 2rem;
+  color: #6b6796;
+}
+.btn-index {
+  display: grid;
+  grid-template-columns: repeat(2, auto);
+  grid-gap: 2.5rem 8rem;
+  justify-content: center;
+  margin-top: 3rem;
+  font-size: 1.5rem;
+}
+.header-btn-index {
+  width: 11.5rem;
+  height: 9.6rem;
+  background-color: #8c89af;
+  border-radius: 10px;
+  border: 0.1rem solid #8c89af;
+  color: #ffff;
+}
+.log-btn-index {
+  width: 36rem;
+  height: 4rem;
+  background-color: #8c89af;
+  border-radius: 10px;
+  border: 0.1rem solid #8c89af;
+  color: #ffff;
+}
+.disable-link {
+  text-decoration: none;
+}
+.btn-index:hover {
+  color: #ffff;
+  background-color: rgb(59, 51, 82);
+  color: black;
+  text-decoration: none;
+}
