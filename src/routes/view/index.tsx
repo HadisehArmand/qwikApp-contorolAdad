@@ -1,36 +1,34 @@
-import {
-  component$,
-  useStylesScoped$,
-  useTask$,
-  useStore,
-} from "@builder.io/qwik";
+import { component$, Resource, useStylesScoped$ } from "@builder.io/qwik";
 import styles from "./view.module.css?inline";
 import "../../index.css";
-import { setUserData } from "~/userStore";
+import { useUserData } from "~/userStore";
 
 export default component$(() => {
-  useTask$(async () => {
-    // A task without `track` any state effectively behaves like a `on mount` hook.
-    const users = setUserData();
-    console.log(users);
-  });
+  const users = useUserData();
+  console.log(users.value);
 
-  const renderUser = () => {
-    return users.map(({ id, firstname, lastname, email, password, avatar }) => {
-      return (
-        <tr key={id}>
-          <td>{id}</td>
-          <td>{firstname}</td>
-          <td>{lastname}</td>
-          <td>{email}</td>
-          <td>{password}</td>
-          <td>
-            <img src={avatar} height="50px" alt="pic" />
-          </td>
-        </tr>
-      );
-    });
-  };
+  const UsersTableRow = () => (
+    <Resource
+      value={users}
+      onPending={() => <p>Loading...</p>}
+      onRejected={() => <p>Error...</p>}
+      onResolved={(data) =>
+        data.map((t: any) => (
+          <tr key={t.id}>
+            <td>{t.id}</td>
+            <td>{t.firstname}</td>
+            <td>{t.lastname}</td>
+            <td>{t.email}</td>
+            <td>{t.password}</td>
+            <td>
+              <img src={t.avatar} height="50" alt="pic" />
+            </td>
+          </tr>
+        ))
+      }
+    />
+  );
+
   useStylesScoped$(styles);
   return (
     <div class="container-fluid">
@@ -50,7 +48,7 @@ export default component$(() => {
                 <th scope="col">Avatar</th>
               </tr>
             </thead>
-            <tbody>{renderUser()}</tbody>
+            <tbody>{UsersTableRow()}</tbody>
           </table>
         </div>
       </div>
