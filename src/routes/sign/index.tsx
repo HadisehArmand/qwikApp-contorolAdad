@@ -4,25 +4,25 @@ import { component$, useComputed$, useSignal,$,useStylesScoped$ } from '@builder
 import {submitUser} from '~/userStore'
 
 export default component$(() => {
-    const firstname = useSignal('FirstName');
-    const lastname = useSignal('LastName');
-    const email = useSignal('Email');
-    const password = useSignal('Password');
-    const avatar = useSignal('avatar');
+    const firstname = useSignal('');
+    const lastname = useSignal('');
+    const email = useSignal('');
+    const password = useSignal('');
+    const avatar = useSignal('');
     useStylesScoped$(styles);
     return (
-        <div class="container-fluid d-flex justify-content-center mt-5">
-            <div class="row main-sign-log">
+        <div class="flex justify-center mt-20"> 
+            <div class="border-slate-200 bg-amber-50	w-1/3 h-auto rounded-lg drop-shadow-xl ">
                 <div class="row d-flex justify-content-center">
-                    <h1 class="text-center">Sign Up</h1>
-                    <div class="input-group mb-3  d-flex justify-content-center">
-                        <span class="input-group-text" id="basic-addon1">
+                    <h1 class=" text-center  font-bold text-violet-500 text-4xl mt-4">Sign Up</h1>
+                    <div class="flex justify-center">
+                        {/* <span class="input-group-text" id="basic-addon1">
                             F
-                        </span>
+                        </span> */}
                         <input
                             id="firstname"
                             type="text"
-                            class="form-control"
+                            class="border rounded px-4 py-2 focus:outline-none focus:ring mb-6 mt-10"
                             placeholder="FirstName"
                             aria-label="FirstName"
                             aria-describedby="basic-addon1"
@@ -30,15 +30,15 @@ export default component$(() => {
                         />
                     </div>
                 </div>
-                <div class="row d-flex justify-content-center">
+                <div class="flex justify-center">
                     <div class="input-group mb-3">
-                        <span class="input-group-text" id="basic-addon1">
+                        {/* <span class="input-group-text" id="basic-addon1">
                             L
-                        </span>
+                        </span> */}
                         <input
                             id="lastname"
                             type="text"
-                            class="form-control"
+                            class="border rounded px-4 py-2 focus:outline-none focus:ring mb-3.5"
                             placeholder="LastName"
                             aria-label="LastName"
                             aria-describedby="basic-addon1"
@@ -46,15 +46,15 @@ export default component$(() => {
                         />
                     </div>
                 </div>
-                <div class="row d-flex justify-content-center">
+                <div class="flex justify-center">
                     <div class="input-group mb-3">
-                        <span class="input-group-text" id="basic-addon1">
+                        {/* <span class="input-group-text" id="basic-addon1">
                             @
-                        </span>
+                        </span> */}
                         <input
                             id="email"
                             type="email"
-                            class="form-control"
+                            class="border rounded px-4 py-2 focus:outline-none focus:ring mb-3.5"
                             placeholder="email"
                             aria-label="email"
                             aria-describedby="basic-addon1"
@@ -62,15 +62,15 @@ export default component$(() => {
                         />
                     </div>
                 </div>
-                <div class="row d-flex justify-content-center">
+                <div class="flex justify-center">
                     <div class="input-group mb-3">
-                        <span class="input-group-text" id="basic-addon1">
+                        {/* <span class="input-group-text" id="basic-addon1">
                             P
-                        </span>
+                        </span> */}
                         <input
                             id="password"
                             type="password"
-                            class="form-control"
+                            class="border rounded px-4 py-2 focus:outline-none focus:ring mb-3.5"
                             placeholder="password"
                             aria-label="password"
                             aria-describedby="basic-addon1"
@@ -78,15 +78,15 @@ export default component$(() => {
                         />
                     </div>
                 </div>
-                <div class="row d-flex justify-content-center">
+                <div class="flex justify-center">
                     <div class="input-group mb-3">
-                        <span class="input-group-text" id="basic-addon1">
+                        {/* <span class="input-group-text" id="basic-addon1">
                             A
-                        </span>
+                        </span> */}
                         <input
                             id="avatar"
                             type="text"
-                            class="form-control"
+                            class="border rounded px-4 py-2 focus:outline-none focus:ring mb-3.5"
                             placeholder="Avatar"
                             aria-label="Avatar"
                             aria-describedby="basic-addon1"
@@ -94,14 +94,17 @@ export default component$(() => {
                         />
                     </div>
                 </div>
-                <div class="row d-flex justify-content-center">
+                <div class="flex justify-center">
                     <div class="col-6  d-flex justify-content-evenly">
-                        <input
+                        {/* <input
                             class="btn"
                             type="button"
                             value="SignUp"
                             onClick$={()=>submitUser(firstname.value,lastname.value,email.value,password.value,avatar.value)}
-                        />
+                        /> */}
+                        <button class="rounded-full bg-violet-400 text-white w-64 h-10	text-center mb-10"  onClick$={()=>submitUser(firstname.value,lastname.value,email.value,password.value,avatar.value)}>
+                    add user
+                  </button>
                     </div>
                 </div>
             </div>
