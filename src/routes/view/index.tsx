@@ -15,12 +15,22 @@ export default component$(() => {
       onResolved={(data) =>
         data.map((t: any) => (
           <tr key={t.id}>
-            <td>{t.id}</td>
-            <td>{t.firstname}</td>
-            <td>{t.lastname}</td>
-            <td>{t.email}</td>
-            <td>{t.password}</td>
-            <td>
+            <td class="border-separate border border-slate-500 align-center text-center">
+              {t.id}
+            </td>
+            <td class="border-separate border border-slate-500 align-center text-center">
+              {t.firstname}
+            </td>
+            <td class="border-separate border border-slate-500 align-center text-center">
+              {t.lastname}
+            </td>
+            <td class="border-separate border border-slate-500 align-center text-center">
+              {t.email}
+            </td>
+            <td class="border-separate border border-slate-500 align-center text-center">
+              {t.password}
+            </td>
+            <td class="border-separate border border-slate-500 align-center text-center">
               <img src={t.avatar} height="50" alt="pic" />
             </td>
           </tr>
@@ -31,21 +41,39 @@ export default component$(() => {
 
   useStylesScoped$(styles);
   return (
-    <div class="container-fluid">
-      <div class="main">
-        <div class="table">
-          <table class="table-fixed">
-            <caption class="caption-top text-black text-xl">
+    <div>
+      <div>
+        <div class="container-fluid align-center">
+          <table class="container table-auto border-separate border border-slate-500">
+            <caption class="my-2.5 text-center ml-2.5 pb-2.5	 font-bold text-black text-4xl">
               View the list of users
             </caption>
-            <thead>
-              <tr>
-                <th scope="col">id</th>
-                <th scope="col">FirstName</th>
-                <th scope="col">LastName</th>
-                <th scope="col">Email</th>
-                <th scope="col">Password</th>
-                <th scope="col">Avatar</th>
+            <thead class="ma-2 pa-2">
+              <tr class="ma-2 pa-2">
+                <th
+                  scope=""
+                  class="border-separate border border-slate-700 py-5"
+                >
+                  id
+                </th>
+                <th scope="" class="border-separate border border-slate-700">
+                  FirstName
+                </th>
+                <th scope="" class="border-separate border border-slate-700">
+                  LastName
+                </th>
+                <th scope="" class="border-separate border border-slate-700">
+                  Email
+                </th>
+                <th scope="" class="border-separate border border-slate-700">
+                  Password
+                </th>
+                <th
+                  class="w-4 h-5	border-0 border-separate border border-slate-700"
+                  scope=""
+                >
+                  Avatar
+                </th>
               </tr>
             </thead>
             <tbody>{UsersTableRow()}</tbody>

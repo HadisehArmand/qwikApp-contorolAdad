@@ -1,5 +1,5 @@
 import { component$, Resource, useStylesScoped$ } from "@builder.io/qwik";
-import styles from "./view.module.css?inline";
+import styles from "./add.module.css?inline";
 import "../../index.css";
 import { Link } from "@builder.io/qwik-city";
 import { useUserData, handleDeleteUser } from "~/userStore";
@@ -45,7 +45,7 @@ export default component$(() => {
           <div class="row d-flex justify-content-start mt-1">
             <div class="col-5">
               <div class="input-group mb-1">
-                <Link class="disable-link" href="/sign">
+                <Link class="" href="/sign">
                   <input
                     type="submit"
                     placeholder="add user"
