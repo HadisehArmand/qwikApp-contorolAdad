@@ -38,7 +38,9 @@ export default component$(() => {
                 <button class="delete" onClick$={() => handleDeleteUser(t.id)}>
                   delete
                 </button>
-                <button class="edit">edit</button>
+                <Link href={`/edit/${t.id}`}>
+                  <button class="edit">edit</button>
+                </Link>
               </div>
             </td>
           </tr>
