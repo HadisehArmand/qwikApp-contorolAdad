@@ -1,4 +1,4 @@
-.infobox {
+/* .infobox {
   color: white;
   font-size: 0.8rem;
   line-height: 2;
@@ -20,4 +20,18 @@
   .infobox {
     margin: 0;
   }
+} */
+.edit {
+  width: 1rem;
+  height: 0.5rem;
+  border-radius: 0.4rem;
+  background-color: rgb(74, 170, 99);
+  color: rgb(42, 41, 41);
+}
+.delete {
+  width: 1rem;
+  height: 0.5rem;
+  border-radius: 0.4rem;
+  background-color: rgb(170, 74, 74);
+  color: rgb(42, 41, 41);
 }

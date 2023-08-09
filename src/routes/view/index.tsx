@@ -69,7 +69,7 @@ export default component$(() => {
                   Password
                 </th>
                 <th
-                  class="w-4 h-5	border-0 border-separate border border-slate-700"
+                  class="w-4 h-5	 border-separate border border-slate-700"
                   scope=""
                 >
                   Avatar
