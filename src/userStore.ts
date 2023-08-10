@@ -21,6 +21,36 @@ export const handleDeleteUser = async (id: number) => {
     console.error("Failed to delete user:", error);
   }
 };
+export const updateUser = (
+  id: number,
+  firstname: any,
+  lastname: any,
+  email: any,
+  password: any,
+  avatar: any
+) => {
+  const updatedUser = {
+    id: id,
+    firstname,
+    lastname,
+    email,
+    password,
+    avatar,
+  };
+
+  axios
+    .put(
+      `https://64b53279f3dbab5a95c6e9e2.mockapi.io/api/v1/user/${id}`,
+      updatedUser
+    )
+    .then((res) => {
+      alert(JSON.stringify(res.data) + "\nEdited !");
+      window.location.href = "/view";
+    })
+    .catch((error) => {
+      console.error("Error editing user: ", error);
+    });
+};
 
 export const submitUser = $(
   (firstname: any, lastname: any, email: any, password: any, avatar: any) => {
