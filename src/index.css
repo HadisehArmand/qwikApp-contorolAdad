@@ -1,23 +1,46 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-.edit {
-  width: 6rem;
-  height: 2.5rem;
-  border-radius: 0.4rem;
-  background-color: rgb(49, 196, 23);
-  color: rgb(255, 255, 255);
-}
-.delete {
-  width: 6rem;
-  height: 2.5rem;
-  border-radius: 0.4rem;
-  background-color: rgb(196, 23, 23);
-  color: rgb(255, 255, 255);
 
-  margin-right: 1rem;
+@layer utilities {
+  .edit {
+    width: 6rem;
+    height: 2.5rem;
+    border-radius: 0.4rem;
+    background-color: rgb(49, 196, 23);
+    color: rgb(255, 255, 255);
+    text-align: center;
+  }
+  .delete {
+    width: 6rem;
+    height: 2.5rem;
+    border-radius: 0.4rem;
+    background-color: rgb(196, 23, 23);
+    color: rgb(255, 255, 255);
+    text-align: center;
+    margin-right: 1rem;
+  }
+  .button {
+    text-align: center;
+  }
 }
-.button {
-  /* margin-left: 2rem; */
-  text-align: center;
+@layer components {
+  .btn-view {
+    @apply box-border rounded-lg	 w-32 h-24  bg-violet-400 	text-white m-4
+    sm:box-border sm:rounded-lg	 sm:w-36 sm:h-28 sm:bg-violet-400	sm:text-white sm:m-6
+    md:box-border md:rounded-lg	 md:w-40 md:h-32 md:bg-violet-400	md:text-white md:m-8
+    lg:box-border lg:rounded-lg	 lg:w-44 lg:h-36 lg:bg-violet-400	lg:text-white lg:m-8
+    xl:box-border xl:rounded-lg	 xl:w-48 xl:h-40 xl:bg-violet-400	xl:text-white xl:m-10
+    2xl:box-border 2xl:rounded-lg	 2xl:w-52 2xl:h-44 2xl:bg-violet-400	2xl:text-white 2xl:m-12;
+  }
+  .font {
+    @apply text-xl text-violet-500 mt-5
+     sm:text-2xl sm:text-violet-500 sm:mt-5
+     md:text-3xl md:text-violet-500 md:mt-5
+     lg:text-4xl lg:text-violet-500 lg:mt-5
+     xl:text-5xl xl:text-violet-500 xl:mt-5;
+  }
+  .border {
+    @apply border-slate-200 bg-amber-50	w-2/5 h-auto rounded-lg drop-shadow-xl;
+  }
 }
