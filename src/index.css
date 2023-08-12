@@ -4,21 +4,12 @@
 
 @layer utilities {
   .edit {
-    /* width: 6rem; */
-    /* height: 2.5rem; */
-    /* border-radius: 0.4rem; */
     background-color: rgb(49, 196, 23);
     color: rgb(255, 255, 255);
-    /* text-align: center; */
   }
   .delete {
-    /* width: 6rem; */
-    /* height: 2.5rem; */
-    /* border-radius: 0.4rem; */
     background-color: rgb(196, 23, 23);
     color: rgb(255, 255, 255);
-    /* text-align: center; */
-    /* margin-right: 1rem; */
   }
   .button {
     text-align: center;
@@ -85,9 +76,9 @@
   }
 
   .btn-del {
-    @apply rounded-md text-center 
-    sm:w-10 sm:h-4  sm:text-xs
-    md:w-14 md:h-6  md:text-xs
+    @apply rounded-md text-center align-middle p-0
+    sm:w-14 sm:h-4  sm:text-xs 
+    md:w-16 md:h-6  md:text-xs 
     lg:w-24 lg:h-10 lg:text-base lg:mr-4
     xl:w-28 lg:h-12 xl:text-base xl:mr-4;
   }
