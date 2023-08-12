@@ -7,7 +7,7 @@ export default component$(() => {
   useStylesScoped$(styles);
   return (
     <div class=" flex justify-center mt-20">
-      <div class="border">
+      <div class="border-main">
         <div class="row">
           <h1 class="font">User Management</h1>
         </div>

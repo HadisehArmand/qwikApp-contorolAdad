@@ -26,21 +26,36 @@
 }
 @layer components {
   .btn-view {
-    @apply box-border rounded-lg	 w-32 h-24  bg-violet-400 	text-white m-4
-    sm:box-border sm:rounded-lg	 sm:w-36 sm:h-28 sm:bg-violet-400	sm:text-white sm:m-6
-    md:box-border md:rounded-lg	 md:w-40 md:h-32 md:bg-violet-400	md:text-white md:m-8
+    @apply box-border rounded-lg	 w-24 h-16  bg-violet-400 	text-white m-2
+    sm:box-border sm:rounded-lg	 sm:w-36 sm:h-28 sm:bg-violet-400	sm:text-white sm:m-4
+    md:box-border md:rounded-lg	 md:w-40 md:h-32 md:bg-violet-400	md:text-white md:m-6
     lg:box-border lg:rounded-lg	 lg:w-44 lg:h-36 lg:bg-violet-400	lg:text-white lg:m-8
     xl:box-border xl:rounded-lg	 xl:w-48 xl:h-40 xl:bg-violet-400	xl:text-white xl:m-10
-    2xl:box-border 2xl:rounded-lg	 2xl:w-52 2xl:h-44 2xl:bg-violet-400	2xl:text-white 2xl:m-12;
+    2xl:box-border 2xl:rounded-lg	 2xl:w-56 2xl:h-48 2xl:bg-violet-400	2xl:text-white 2xl:m-12;
   }
   .font {
-    @apply text-xl text-violet-500 mt-5
+    @apply text-base text-violet-500 mt-5
      sm:text-2xl sm:text-violet-500 sm:mt-5
      md:text-3xl md:text-violet-500 md:mt-5
      lg:text-4xl lg:text-violet-500 lg:mt-5
      xl:text-5xl xl:text-violet-500 xl:mt-5;
   }
-  .border {
+  .border-main {
     @apply border-slate-200 bg-amber-50	w-2/5 h-auto rounded-lg drop-shadow-xl;
+  }
+  .border-view {
+    @apply border-separate border border-slate-500 text-center
+     lg:border-separate lg:border lg:border-slate-500 lg:text-center;
+  }
+  .border--view {
+    @apply border-separate border border-slate-700;
+  }
+  .table-view {
+    @apply container table-auto border-separate border border-slate-500 w-1/2 h-auto
+    cm:container cm:table-auto cm:border-separate cm:border cm:border-slate-500 cm:w-3/5 cm:h-auto
+    md:container md:table-auto md:border-separate md:border md:border-slate-500 md:w-2/3 md:h-auto
+    lg:container lg:table-auto lg:border-separate lg:border lg:border-slate-500 lg:w-4/5 lg:h-auto
+    xl:container xl:table-auto xl:border-separate xl:border xl:border-slate-500 xl:w-5/6 xl:h-auto
+    2xl:container 2xl:table-auto 2xl:border-separate 2xl:border 2xl:border-slate-500 2xl:w-4/5 2xl:h-auto;
   }
 }
