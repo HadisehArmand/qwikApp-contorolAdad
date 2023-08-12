@@ -33,11 +33,9 @@ export default component$(() => {
   return (
     <div>
       <div>
-        <div class="container-fluid align-center">
-          <table class="container table-auto border-separate border border-slate-500 w-4/5 h-auto">
-            <caption class="my-2.5 text-center ml-2.5 pb-2.5	 font-bold text-black text-4xl">
-              View the list of users
-            </caption>
+        <div class="container">
+          <table class="table-view ">
+            <caption class="cap-view">View the list of users</caption>
             <thead class="ma-2 pa-2">
               <tr class="ma-2 pa-2">
                 <th scope="" class="border--view">

@@ -44,18 +44,30 @@
     @apply border-slate-200 bg-amber-50	w-2/5 h-auto rounded-lg drop-shadow-xl;
   }
   .border-view {
-    @apply border-separate border border-slate-500 text-center
-     lg:border-separate lg:border lg:border-slate-500 lg:text-center;
+    @apply border-separate border border-slate-500 text-center align-middle;
+    /* lg:border-separate lg:border lg:border-slate-500 lg:text-center align-center; */
   }
   .border--view {
     @apply border-separate border border-slate-700;
   }
   .table-view {
-    @apply container table-auto border-separate border border-slate-500 w-1/2 h-auto
-    cm:container cm:table-auto cm:border-separate cm:border cm:border-slate-500 cm:w-3/5 cm:h-auto
-    md:container md:table-auto md:border-separate md:border md:border-slate-500 md:w-2/3 md:h-auto
-    lg:container lg:table-auto lg:border-separate lg:border lg:border-slate-500 lg:w-4/5 lg:h-auto
-    xl:container xl:table-auto xl:border-separate xl:border xl:border-slate-500 xl:w-5/6 xl:h-auto
-    2xl:container 2xl:table-auto 2xl:border-separate 2xl:border 2xl:border-slate-500 2xl:w-4/5 2xl:h-auto;
+    @apply container table-auto border-separate border border-slate-500 w-full h-auto overflow-scroll col-span-12
+    sm:container sm:table-auto sm:border-separate sm:border sm:border-slate-500 sm:w-full sm:h-auto sm:overflow-scroll sm:col-span-12
+    md:container md:table-auto md:border-separate md:border md:border-slate-500 md:w-full md:h-auto md:overflow-scroll md:col-span-12
+    lg:container lg:table-auto lg:border-separate lg:border lg:border-slate-500 lg:w-full lg:h-auto lg:col-span-12
+    xl:container xl:table-auto xl:border-separate xl:border xl:border-slate-500 xl:w-full xl:h-auto xl:col-span-12
+    2xl:container 2xl:table-auto 2xl:border-separate 2xl:border 2xl:border-slate-500 2xl:w-full 2xl:h-auto 2xl:col-span-12;
+  }
+  .cap-view {
+    @apply my-1 text-center ml-1 pb-1	 font-bold text-black text-xl w-1/2
+    sm:my-1.5 sm:text-center sm:ml-1.5 sm:pb-1.5	 sm:font-bold sm:text-black sm:text-4xl sm:w-3/5
+    md:my-2 md:text-center md:ml-2 md:pb-2	 md:font-bold md:text-black md:text-3xl md:w-2/3
+    lg:my-2.5 lg:text-center lg:ml-2.5 lg:pb-2.5	 lg:font-bold lg:text-black lg:text-4xl lg:w-3/4
+    xl:my-2.5 xl:text-center xl:ml-2.5 xl:pb-2.5	 xl:font-bold xl:text-black xl:text-4xl xl:w-4/5
+    2xl:my-2.5 2xl:text-center 2xl:ml-2.5 2xl:pb-2.5	 2xl:font-bold 2xl:text-black 2xl:text-5xl 2xl:w-5/6;
+  }
+  * {
+    margin: 0;
+    padding: 0;
   }
 }
