@@ -28,7 +28,7 @@ export default component$(() => {
     <div class="flex justify-center mt-20">
       <div class="border-slate-200 bg-amber-50	w-1/3 h-auto rounded-lg drop-shadow-xl">
         <div class="row d-flex justify-content-center">
-          <h1 class=" text-center  font-bold text-violet-500 text-4xl mt-4">Edit</h1>
+          <h1 class="cap-view">Edit</h1>
           <div class="flex justify-center">
             {/* <span class="input-group-text" id="basic-addon1">
               F
@@ -36,7 +36,7 @@ export default component$(() => {
             <input
               id="firstname"
               type="text"
-              class="border rounded px-4 py-2 focus:outline-none focus:ring mb-6 mt-10"
+              class="input-sign"
               placeholder="FirstName"
               aria-label="FirstName"
               aria-describedby="basic-addon1"
@@ -50,7 +50,7 @@ export default component$(() => {
             <input
               id="lastname"
               type="text"
-              class="border rounded px-4 py-2 focus:outline-none focus:ring mb-3.5"
+              class="input-sign"
               placeholder="LastName"
               aria-label="LastName"
               aria-describedby="basic-addon1"
@@ -64,7 +64,7 @@ export default component$(() => {
             <input
               id="email"
               type="text"
-              class="border rounded px-4 py-2 focus:outline-none focus:ring mb-3.5"
+              class="input-sign"
               placeholder="email"
               aria-label="email"
               aria-describedby="basic-addon1"
@@ -78,7 +78,7 @@ export default component$(() => {
             <input
               id="password"
               type="text"
-              class="border rounded px-4 py-2 focus:outline-none focus:ring mb-3.5"
+              class="input-sign"
               placeholder="password"
               aria-label="password"
               aria-describedby="basic-addon1"
@@ -92,7 +92,7 @@ export default component$(() => {
             <input
               id="avatar"
               type="text"
-              class="border rounded px-4 py-2 focus:outline-none focus:ring mb-3.5"
+              class="input-sign"
               placeholder="avatar"
               aria-label="avatar"
               aria-describedby="basic-addon1"
@@ -109,7 +109,7 @@ export default component$(() => {
               value="Edit"
               onClick$={()=>updateUser(parseInt(UID),firstname.value,lastname.value,email.value,password.value,avatar.value)}
             /> */}
-             <button class="rounded-full bg-violet-400 text-white w-64 h-10	text-center mb-10"  onClick$={()=>updateUser(parseInt(UID),firstname.value,lastname.value,email.value,password.value,avatar.value)}>
+             <button class="btn-add"  onClick$={()=>updateUser(parseInt(UID),firstname.value,lastname.value,email.value,password.value,avatar.value)}>
                     Edit
                   </button>
           </div>

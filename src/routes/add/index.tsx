@@ -15,31 +15,24 @@ export default component$(() => {
       onResolved={(data) =>
         data.map((t: any) => (
           <tr key={t.id}>
-            <td class="border-separate border border-slate-500 align-center text-center">
-              {t.id}
-            </td>
-            <td class="border-separate border border-slate-500 align-center text-center">
-              {t.firstname}
-            </td>
-            <td class="border-separate border border-slate-500 align-center text-center">
-              {t.lastname}
-            </td>
-            <td class="border-separate border border-slate-500 align-center text-center">
-              {t.email}
-            </td>
-            <td class="border-separate border border-slate-500 align-center text-center">
-              {t.password}
-            </td>
-            <td class="border-separate border border-slate-500 align-center text-center">
+            <td class="border-view">{t.id}</td>
+            <td class="border-view">{t.firstname}</td>
+            <td class="border-view">{t.lastname}</td>
+            <td class="border-view">{t.email}</td>
+            <td class="border-view">{t.password}</td>
+            <td class="border-view">
               <img src={t.avatar} height="50" alt="pic" />
             </td>
             <td>
               <div class="button">
-                <button class="delete" onClick$={() => handleDeleteUser(t.id)}>
+                <button
+                  class="delete btn-del"
+                  onClick$={() => handleDeleteUser(t.id)}
+                >
                   delete
                 </button>
                 <Link href={`/edit/${t.id}`}>
-                  <button class="edit">edit</button>
+                  <button class="edit btn-del">edit</button>
                 </Link>
               </div>
             </td>
@@ -65,35 +58,23 @@ export default component$(() => {
                     value="add user"
                     aria-describedby="basic-addon1"
                   /> */}
-                  <button class="rounded-full bg-violet-400 text-white w-64 h-10	text-center ">
-                    add user
-                  </button>
+                  <button class="btn-add">add user</button>
                 </Link>
               </div>
             </div>
           </div>
         </div>
-        <div class="container-fluid align-center">
-          <table class="container table-auto border-separate border border-slate-500">
-            <caption class="my-2.5 text-center ml-2.5 pb-2.5	 font-bold text-black text-4xl">
-              View the list of users
-            </caption>
+        <div class="container ">
+          <table class="table-view ">
+            <caption class="cap-view">View the list of users</caption>
             <thead class="ma-2 pa-2">
               <tr class="ma-2 pa-2">
-                <th class="border-separate border border-slate-700 py-5">id</th>
-                <th class="border-separate border border-slate-700">
-                  FirstName
-                </th>
-                <th class="border-separate border border-slate-700">
-                  LastName
-                </th>
-                <th class="border-separate border border-slate-700">Email</th>
-                <th class="border-separate border border-slate-700">
-                  Password
-                </th>
-                <th class="w-4 h-5	 border-separate border border-slate-700">
-                  Avatar
-                </th>
+                <th class="border--view padding-id">id</th>
+                <th class="border--view">FirstName</th>
+                <th class="border--view">LastName</th>
+                <th class="border--view">Email</th>
+                <th class="border--view">Password</th>
+                <th class="avatar	 border--view">Avatar</th>
                 <th>Action</th>
               </tr>
             </thead>

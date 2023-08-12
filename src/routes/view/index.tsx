@@ -38,7 +38,7 @@ export default component$(() => {
             <caption class="cap-view">View the list of users</caption>
             <thead class="ma-2 pa-2">
               <tr class="ma-2 pa-2">
-                <th scope="" class="border--view">
+                <th scope="" class="border--view padding-id">
                   id
                 </th>
                 <th scope="" class="border--view">
@@ -53,7 +53,7 @@ export default component$(() => {
                 <th scope="" class="border--view">
                   Password
                 </th>
-                <th class="w-4 h-5	border--view" scope="">
+                <th class="avatar	border--view" scope="">
                   Avatar
                 </th>
               </tr>

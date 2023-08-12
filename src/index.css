@@ -4,21 +4,21 @@
 
 @layer utilities {
   .edit {
-    width: 6rem;
-    height: 2.5rem;
-    border-radius: 0.4rem;
+    /* width: 6rem; */
+    /* height: 2.5rem; */
+    /* border-radius: 0.4rem; */
     background-color: rgb(49, 196, 23);
     color: rgb(255, 255, 255);
-    text-align: center;
+    /* text-align: center; */
   }
   .delete {
-    width: 6rem;
-    height: 2.5rem;
-    border-radius: 0.4rem;
+    /* width: 6rem; */
+    /* height: 2.5rem; */
+    /* border-radius: 0.4rem; */
     background-color: rgb(196, 23, 23);
     color: rgb(255, 255, 255);
-    text-align: center;
-    margin-right: 1rem;
+    /* text-align: center; */
+    /* margin-right: 1rem; */
   }
   .button {
     text-align: center;
@@ -69,5 +69,74 @@
   * {
     margin: 0;
     padding: 0;
+  }
+  .font-sign {
+    @apply text-center  font-bold text-violet-500 text-xl mt-4
+    sm:text-center  sm:font-bold sm:text-violet-500 sm:text-2xl sm:mt-4
+    md:text-center  md:font-bold md:text-violet-500 md:text-3xl md:mt-4
+    lg:text-center  lg:font-bold lg:text-violet-500 lg:text-4xl lg:mt-4
+    xl:text-center  xl:font-bold xl:text-violet-500 xl:text-4xl xl:mt-4
+    2xl:text-center  2xl:font-bold 2xl:text-violet-500 2xl:text-4xl 2xl:mt-4;
+  }
+  .border-sign {
+    @apply border-slate-200 bg-amber-50	w-1/3 h-auto rounded-lg drop-shadow-xl;
+  }
+  .input-sign {
+    @apply border rounded px-0.5 py-0.5 focus:outline-none focus:ring mb-1 mt-0.5
+    sm:border sm:rounded sm:px-2 sm:py-1 sm:focus:outline-none sm:focus:ring sm:mb-1 sm:mt-1
+    md:border md:rounded md:px-3 md:py-2 md:focus:outline-none md:focus:ring md:mb-2 md:mt-3
+    lg:border lg:rounded lg:px-4 lg:py-2 lg:focus:outline-none lg:focus:ring lg:mb-2 lg:mt-4
+    xl:border xl:rounded xl:px-4 xl:py-2 xl:focus:outline-none xl:focus:ring xl:mb-4 xl:mt-6
+    2xl:border 2xl:rounded 2xl:px-4 2xl:py-2 2xl:focus:outline-none 2xl:focus:ring 2xl:mb-4 2xl:mt-5;
+  }
+  .btn-sign {
+    @apply rounded-full bg-violet-400 text-white w-64 h-10	text-center mb-10
+    sm:bg-violet-400 sm:text-white sm:w-64 sm:h-10	sm:text-center mb-10
+     md:rounded-full  md:bg-violet-400 md:text-white md:w-64 md:h-10	md:text-center md:mb-10
+    lg:rounded-full lg:bg-violet-400 lg:text-white lg:w-64 lg:h-10	lg:text-center lg:mb-10;
+  }
+
+  .btn-del {
+    @apply w-7 h-2 
+    sm:w-10 sm:h-4
+    md:w-14 md:h-6
+    lg:w-24 lg:h-10 lg:text-base lg:mr-4
+    xl:w-28 lg:h-12 xl:text-base xl:mr-4
+     rounded-md text-center text-xs;
+  }
+  .btn-add {
+    @apply rounded-full bg-violet-400 text-white w-48 h-6 text-center
+    sm:rounded-full sm:bg-violet-400 sm:text-white sm:w-52 sm:h-7	sm:text-center sm:mb-3
+    md:rounded-full md:bg-violet-400 md:text-white md:w-56 md:h-8	md:text-center md:mb-3.5
+    lg:rounded-full lg:bg-violet-400 lg:text-white lg:w-64 lg:h-10	lg:text-center lg:mb-4
+    xl:rounded-full xl:bg-violet-400 xl:text-white xl:w-64 xl:h-10	xl:text-center xl:mb-4
+    2xl:rounded-full 2xl:bg-violet-400 2xl:text-white 2xl:w-64 2xl:h-10	2xl:text-center 2xl:mb-4;
+  }
+  .btn-edit {
+    @apply rounded-full bg-violet-400 text-white 	text-center
+    sm:w-64 sm:h-10 sm:mb-10
+    md:w-64  md: h-10 md:mb-10
+    lg:w-64 lg:h-10  lg:mb-10
+    xl:w-64 xl:h-10  xl:mb-10;
+  }
+  .padding-id {
+    @apply py-2
+    sm:py-3
+    md:py-4
+    lg:py-5
+    xl:py-5;
+  }
+  /* .padding-avatar {
+    @apply sm:mb-2
+    md:mb-2.5
+    lg:mb-3
+    xl:mb-3;
+  } */
+  .avatar {
+    @apply w-1 h-2
+    sm:w-2 sm:h-3
+    md:w-3 md:h-4
+    lg:w-4 lg:h-5
+    xl:w-4 xl:h-5;
   }
 }
